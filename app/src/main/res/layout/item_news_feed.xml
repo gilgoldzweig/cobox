@@ -4,31 +4,32 @@
     android:id="@+id/news_feed_item_card_root"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_95sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
     app:cardElevation="@dimen/_4sdp">
 
     <LinearLayout
-            android:id="@+id/news_feed_item_root"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_10sdp"
-            android:orientation="vertical">
+        android:id="@+id/news_feed_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
 
         <android.support.v7.widget.AppCompatTextView
-                android:id="@+id/news_feed_item_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:textColor="@color/primary_text"
-                android:textSize="@dimen/_14ssp"/>
+            android:id="@+id/news_feed_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/_14ssp" />
 
         <android.support.v7.widget.AppCompatTextView
-                android:id="@+id/news_feed_item_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:textColor="@color/secondary_text"
-                android:textSize="@dimen/_12ssp"/>
+            android:id="@+id/news_feed_item_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/_12ssp" />
 
     </LinearLayout>
 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feed_fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.feed.FeedFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/feed_fragment_business_news_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:backgroundTint="@color/primary_dark"
+            android:text="business" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/feed_fragment_other_news_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_weight="1"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:text="other"
+            android:textColor="@color/secondary_text"/>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/feed_fragment_news_refresh_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/feed_fragment_news_rcv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.home.HomeFragment"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_name"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_20ssp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/home_fragment_date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_name"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_20ssp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/home_fragment_select_news_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_fragment_selected_news_place_holder"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/_18ssp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+</LinearLayout>

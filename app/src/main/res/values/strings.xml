@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">CoBox</string>
+
+  <string name="home_fragment_name">Gil Goldzweig</string>
+
+  <string name="home_fragment_selected_news_place_holder">Select a news feed item to see it here</string>
+</resources>

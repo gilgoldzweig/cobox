@@ -171,4 +171,11 @@ class FeedFragment : Fragment(), FeedFragmentContract.View {
     override fun onFeedItemClicked(feedItem: RssItem) {
         //If we want to perform any other action than update the other fragment
     }
+
+    override fun onDestroyView() {
+        //https://stackoverflow.com/questions/35520946/leak-canary-recyclerview-leaking-madapter
+        feed_fragment_news_rcv.layoutManager = null
+        feed_fragment_news_rcv.adapter = null
+        super.onDestroyView()
+    }
 }

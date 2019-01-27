@@ -3,14 +3,14 @@ package com.example.gilgoldzweig.cobox.base
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.LifecycleRegistry
-import org.junit.Test
-
-import org.junit.Assert.*
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertNotNull
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
+import org.junit.Test
 import org.mockito.Mock
-import org.mockito.Mockito
-import org.mockito.Mockito.*
 import org.mockito.junit.MockitoJUnit
 
 class BasePresenterTest {
@@ -36,7 +36,7 @@ class BasePresenterTest {
 
 		lifecycleRegistry.markState(Lifecycle.State.CREATED)
 
-		basePresenter.attach(baseViewImpl)
+		basePresenter.attach(baseViewImpl, null)
 	}
 
 	@Test

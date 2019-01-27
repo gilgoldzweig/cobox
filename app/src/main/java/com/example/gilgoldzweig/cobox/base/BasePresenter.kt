@@ -3,7 +3,6 @@ package com.example.gilgoldzweig.cobox.base
 import android.arch.lifecycle.Lifecycle
 import android.arch.lifecycle.LifecycleObserver
 import android.arch.lifecycle.OnLifecycleEvent
-import android.support.annotation.UiThread
 import com.nyx.tech.models.threads.CoroutineDispatchers
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
